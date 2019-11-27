@@ -560,6 +560,18 @@ section .content {
     /*transform: rotate(2deg);*/
 }
 
+@media only screen and (max-device-width: 1024px) {
+    .bg1 {
+        height: 90%;
+    }
+    .parallax--container {
+        height: 90%;
+    }
+    .parallax--bg {
+        background-attachment: scroll;
+    }
+}
+
 .bg4 {
     background-image: url('../img/casa_esquadria.jpg');
 }
