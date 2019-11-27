@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang=”pt-br”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site oficial da Dividros">
+    <meta name="author" content="Equipe de TI - Divine Vidros de Segurança">
+    <link rel="icon" href="img/logo.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Principal CSS do Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link href="css\design.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ihover.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='css/font-ubuntu.css' rel='stylesheet' type='text/css'>
+    <link href='css/font-vollkorn.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<style>
+    body {
+        /*font-family: 'Lato', sans-serif;*/
+        font-weight: 400;
+    }
+    
+    @media only screen and (max-device-width: 1024px) {
+        h1 {
+            margin-bottom: 40px;
+            margin-top: 120px;
+        }
+        textarea.form-control {
+            height: 200px;
+        }
+    }
+    
+    h1 {
+        margin-bottom: 40px;
+        margin-top: 120px;
+    }
+    
+    label {
+        color: #333;
+    }
+    
+    .btn-send {
+        color: rgb(211, 211, 211);
+        background-color: #28a745;
+        border-color: #797979;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 20px;
+        transition: all .2s ease-out;
+    }
+    
+    .btn-send:hover {
+        background-color: #02c930;
+        color: #fff;
+    }
+    /*.help-block {
+        color: #ff5050;
+        margin-top: 5px;
+    }*/
+    
+    section {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    section .content {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        border-radius: 3px;
+        padding: 15px 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .navbar-box {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0);
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    
+    .navbar-box.ativar {
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+        box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        transition: all .2s linear;
+    }
+    
+    .menu-top {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        color: #ffffff !important;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        /*background: #94949480;*/
+        background-image: linear-gradient(to left top, #2c3a4f, #575d6f, #818490, #adadb3, #d8d8d8);
+        -webkit-transition: all .4s linear;
+        -moz-transition: all .4s linear;
+        padding: 10px 0 3px 0;
+        transition: all .4s linear;
+    }
+    
+    .menu-top a {
+        color: #ffffff;
+        -webkit-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+    
+    .menu-top a:hover {
+        text-decoration: none;
+        color: rgb(51, 255, 0);
+    }
+    
+    .menu-top ul>li {
+        border-right: 1px solid #ffffff;
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    
+    .menu-top ul>li>a {
+        font-weight: bold;
+    }
+    
+    .menu-top ul>li:first-child {
+        padding-left: 0px;
+    }
+    
+    .menu-top ul>li:last-child {
+        border-right: none;
+        padding-right: 0px !important;
+    }
+    
+    .menu-top.fade {
+        height: 0px;
+        padding: 0px !important;
+        margin: 0px !important;
+        visibility: hidden;
+        -webkit-transition: all .4s linear;
+        -moz-transition: all .4s linear;
+        transition: all .4s linear;
+    }
+    
+    @media (min-width: 1200px) {
+        #cta .col-md-4 {
+            height: 200px;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .navbar .navbar-nav .nav-item {
+            padding-right: 10px;
+        }
+        .navbar .navbar-nav .nav-item a {
+            font-size: 12px;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        .menu-top {
+            height: 35px;
+            font-size: 11px;
+        }
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px) {
+        .menu-top ul li:first-child {
+            border-right: none;
+        }
+        .menu-top .d-hidden {
+            display: none;
+        }
+        .d-hidden {
+            display: none;
+        }
+        .d-hidden-md {
+            display: block;
+        }
+        #slider {
+            padding-top: 110px;
+        }
+        #company {
+            background: none;
+        }
+        #about h2 {
+            padding: 10px;
+        }
+    }
+    
+    @media (max-width: 575px) {
+        /*.menu-bottom {
+        padding: 10px 20px !important;
+    }
+    */
+        .menu-top ul li:first-child {
+            border-right: none;
+        }
+        .menu-top .d-hidden {
+            display: none;
+        }
+        .navbar .navbar-brand img {
+            max-height: 40px;
+        }
+        .d-hidden {
+            display: none;
+        }
+        .d-hidden-md {
+            display: block;
+        }
+        #slider {
+            padding-top: 100px;
+        }
+        #company {
+            background: none;
+        }
+        #about h2 {
+            padding: 30px;
+        }
+        #units .btn-map {
+            margin: 15px 5px;
+        }
+        #contact .col-md-6 {
+            padding: 50px 20px;
+        }
+        #group-companies img {
+            margin: 35px 0;
+        }
+    }
+    
+    .navbar .navbar-nav .nav-item a {
+        font-size: .8rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 500;
+        /*letter-spacing: .3em;*/
+        letter-spacing: 7px;
+        /*font:"Neuton";*/
+        color: #ffffff;
+        text-shadow: 2px 3px 3px #000;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+    
+    .navbar .navbar-nav .nav-item a:hover,
+    .navbar .navbar-nav .nav-item a:focus {
+        color: rgb(31, 30, 30);
+        text-shadow: 3px 4px 4px rgb(53, 52, 52);
+        background-color: transparent;
+        border: 2px solid #fff
+    }
+    
+    .navbar-dark .navbar-nav .nav-link.active {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff
+    }
+    
+    .navbar-expand-lg {
+        flex-flow: column;
+    }
+    
+    .navbar .navbar-brand img {
+        max-height: 90px;
+        transition: 0.3s;
+    }
+    
+    .logo-small img {
+        max-height: 60px !important;
+        transition: 0.3s;
+    }
+    
+    .whats-icon {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        left: 15px;
+        background-color: #25d366;
+        color: #FFF;
+        cursor: pointer;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+        border: rgb(126, 126, 126) solid 1px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        /*-webkit-transition: transform .4s;
+            transition: transform .4s;*/
+        display: none;
+        opacity: 0;
+        transition: opacity 500ms;
+    }
+    
+    .whats-icon.aparece {
+        opacity: 1;
+        display: block;
+        color: rgb(219, 219, 219);
+        transition: all 0.5s;
+    }
+    
+    .whats-icon.aparece:hover {
+        transform: scale(1.15);
+        color: #FFF;
+        /*border: rgb(250, 231, 60) solid 2px;*/
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    
+    @media only screen and (max-device-width: 1024px) {
+        .whats-icon.aparece {
+            /*width: 20px;
+                height: 20px;
+                bottom: 15px;
+                left: 15px;*/
+            width: 50px;
+            height: 50px;
+            bottom: 7px;
+            left: 10px;
+        }
+    }
+</style>
+
+<script>
+    function myFunction() {
+        document.getElementById("contact-form").reset();
+    }
+</script>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-box" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); background-image: linear-gradient(to right bottom, #696a6f, #707177, #76787e, #7d8086, #83878e, #8a8e95, #91959d, #989ca4, #a1a4ac, #abadb5, #b4b5bd, #bebec6);"
+        data-aos="zoom-out-down" data-aos-once="true" data-aos-delay="700">
+        <div class="menu-top clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
+                        <span class="text-left">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">WhatsApp
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932"
+                                        target="_blank">(37) 9.9158-1932 </a>
+                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932"
+                                        target="_blank"><i class="fa fa-whatsapp" style="font-size:26px"></i></a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
+                        <span class="text-right">
+                            <ul class="list-inline">
+                                <li class="list-inline-item d-hidden">Ligue - Dividros <a href="tel:+553732159000">(37)
+                                        3215-9000</a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container menu-bottom">
+            <a class="navbar-brand mr-0 mr-md-2 logo-small" href="index.html" aria-label="Dividros" title="Dividros" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
+                <img class="navbar-brand zoom img-fluid" src="img/logo.png" alt="Logo Dividros" width="85" height="60">
+            </a>
+            <!--<span class="navbar-brand brand-efeito">Dividros</span>-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1300">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1500">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1600">
+                        <a class="nav-link" href="empresa.html">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1700">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produtos
+                            <!--<i class="fa fa-angle-down"></i>-->
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left animate slideIn" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="esquadria.html">Esquadrias de Alumínio</a>
+                            <a class="dropdown-item" href="espelho.html">Espelho</a>
+                            <a class="dropdown-item" href="acm.html">ACM</a>
+                            <a class="dropdown-item" href="janelaseportas.html">Janelas e portas</a>
+                            <a class="dropdown-item" href="pvc.html">PVC</a>
+                            <a class="dropdown-item" href="box.html">Box</a>
+                            <a class="dropdown-item" href="vidromultilaminado.html">Multilaminado</a>
+                            <a class="dropdown-item" href="vidrotemperado.html">Vidro Temperado</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="projetos.html">Projetos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1800">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1900">
+                        <a class="nav-link" href="portfolio.html">Portfólio</a>
+                    </li>
+                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2100">
+                        <a class="nav-link" href="contato.html" style="font-weight: bold; border-bottom: 2px solid rgb(212, 212, 212);">Contato</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto dividros-footer-social-navbar list-unstyled mb-0" data-aos="flip-down" data-aos-once="true" data-aos-delay="2200">
+                    <li data-aos="fade-up" data-aos-once="true"><a href="http://www.instagram.com/dividros" target="_blank"><span class="icon-instagram"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt-br.facebook.com/dividros/" target="_blank"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt.linkedin.com/company/dividros" target="_blank"><span class="icon-linkedin"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://www.youtube.com/channel/UCrZIuHrni_zvi1RfYjUaRng" target="_blank"><span
+                                class="icon-youtube"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">
+
+                <h1>Entre em contato com a
+                    <a>Dividros</a>
+                </h1>
+
+                <p class="lead">Você tem alguma dúvida, sugestão ou reclamação? Por favor não hesite em nos contactar. Nossa equipe de atendimento entrará em contato o mais breve possível.</p>
+
+
+                <form accept-charset="utf-8" id="contact-form" method="post" action="contato.php">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nome * &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp</label><span style="font-size: 14px;" id="nomeErros"></span>
+                                    <input id="form_nome" type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome..." required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Sobrenome * &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp</label><span style="font-size: 14px;" id="sobrenomeErros"></span>
+                                    <input id="form_sobrenome" type="text" name="sobrenome" id="sobrenome" class="form-control" placeholder="Digite seu sobrenome..." required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email * &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp</label>
+                                    <span style="font-size: 14px;" id="emailErros"></span>
+                                    <!--<span for="form_email" class="help-block"></span>-->
+                                    <input id="form_email" type="email" name="email" id="email" class="form-control" placeholder="Digite seu Email..." required="required">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Telefone/WhatsApp * &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp</label><span style="font-size: 14px;" id="telefoneErros"></span>
+                                    <input id="form_telefone" type="telefone" name="telefone" id="telefone" class="form-control" placeholder="Telefone/WhatsApp..." required="required">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Por favor especifique sua necessidade * &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp</label><span style="font-size: 14px;" id="assuntoErros"></span>
+                                    <select id="form_assunto" name="assunto" id="assunto" class="form-control" required="required">
+                                        <option value=""></option>
+                                        <option value="Orcamento">Orçamento</option>
+                                        <option value="Status Pedido">Status de pedido</option>
+                                        <option value="Sugestao">Sugestão</option>
+                                        <option value="Reclamacao">Reclamação</option>
+                                        <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Mensagem * &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                        &nbsp</label><span style="font-size: 14px;" id="mensagemErros"></span>
+                                    <textarea id="form_mensagem" name="mensagem" id="mensagem" class="form-control" placeholder="Digite sua mensagem..." rows="4" required="required"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-send" onclick="confirmaContato()">Enviar</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> Campos obrigatórios. Formulário de contato -
+                                    <a href="index.html" target="_blank">Dividros</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+
+    <a class="whats-icon" href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" data-toggle="tooltip" data-placement="right" title="Clique aqui para comunicação via Whatsapp">
+        <i style="margin-top:16px;" class="fa fa-whatsapp"></i>
+    </a>
+
+    <footer class="dividros-footer dividros-bg-dark dividros-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="dividros-footer-widget mb-4 bg-primary p-4">
+                        <h2 class="dividros-heading-2">Dividros</h2>
+                        <p>A Dividros trabalha com uma linha de vidros e espelhos, voltada para atender a linha de decoração e moveleiro</p>
+                        <ul class="dividros-footer-social list-unstyled mb-0">
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="50"><a href="http://www.instagram.com/dividros" target="_blank"><span
+                                        class="icon-instagram"></span></a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="100"><a href="https://pt-br.facebook.com/dividros/" target="_blank"><span
+                                        class="icon-facebook"></span></a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="200"><a href="" target="_blank"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="300"><a href="https://br.pinterest.com/dividrosdivinopolis/" target="_blank"><span
+                                        class="icon-pinterest"></span></a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="400"><a href="https://pt.linkedin.com/company/dividros" target="_blank"><span
+                                        class="icon-linkedin"></span></a>
+                            </li>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="500"><a href="https://www.youtube.com/channel/UCrZIuHrni_zvi1RfYjUaRng" target="_blank"><span class="icon-youtube"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="dividros-footer-widget mb-4 ml-md-5">
+                        <h2 class="dividros-heading-2">Links úteis</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="empresa.html" class="py-2 d-block">A Dividros</a></li>
+                            <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
+                            <li><a href="portfolio.html" class="py-2 d-block">Portfólio</a></li>
+                            <li><a href="redessociais.html" class="py-2 d-block">Redes Sociais</a></li>
+                            <li><a href="/" style="color: #fff; text-decoration: underline;" class="py-2 d-block">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="dividros-footer-widget mb-4">
+                        <h2 class="dividros-heading-2">Produtos</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="esquadria.html" class="py-2 d-block">Esquadrias</a></li>
+                            <li><a href="espelho.html" class="py-2 d-block">Espelho</a></li>
+                            <li><a href="acm.html" class="py-2 d-block">ACM</a></li>
+                            <li><a href="janelaseportas.html" class="py-2 d-block">Janelas e portas</a></li>
+                            <li><a href="pvc.html" class="py-2 d-block">PVC</a></li>
+                            <li><a href="box.html" class="py-2 d-block">Box</a></li>
+                            <li><a href="vidromultilaminado.html" class="py-2 d-block">Vidro Multilaminado</a></li>
+                            <li><a href="vidrotemperado.html" class="py-2 d-block">Vidro Temperado</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="dividros-footer-widget mb-4">
+                        <h2 class="dividros-heading-2">Show Room</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li>
+                                    <a href="https://www.google.com/maps/place/Dividros+-+Esquadria,+Fachada,+ACM,+Inox/@-20.1413926,-44.9043281,19.5z/data=!4m13!1m7!3m6!1s0xa0a57128adc27b:0xdd228e3fc4ba92dd!2sR.+Goi%C3%A1s,+220+-+Porto+Velho,+Divin%C3%B3polis+-+MG,+35500-001!3b1!8m2!3d-20.1487731!4d-44.8827374!3m4!1s0xa0a59255bcdf3f:0x1337d7e33b609bb5!8m2!3d-20.1412907!4d-44.9042532"
+                                        target="_blank">
+                                        <span class="icon icon-map-marker"></span><span class="text">Rua Góias,
+                                            2020,
+                                            Divinópolis, Minas Gerais</span></a>
+                                </li>
+                                <li><a><span class="icon icon-phone"></span><span class="text">37
+                                            3215-9000</span></a></li>
+                                <li><a href="mailto:atendimento@dividros.com.br" target="_blank"><span
+                                            class="icon icon-envelope"></span><span class="text"><span
+                                                class="text">atendimento@dividros.com.br</span></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy; Todos os direitos reservados | Dividros
+                    </p>
+                    <!--<a style="font-size: 10px;" href="https://www.freepik.com/free-photos-vectors/design" target="_blank">Fotos utilizadas nesse site - www.freepik.com</a>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var minLengthnome = 3;
+        var maxLengthnome = 50;
+        var checkNome = false;
+
+        $(document).ready(function() {
+            $('#form_nome').on('keydown keyup change', function() {
+                var char = $(this).val();
+                var charLength = $(this).val().length;
+
+                if (charLength < minLengthnome) {
+                    //$('#nomeErros').text('Favor digitar seu nome.');
+                    $('#nomeErros').css("color", "grey");
+
+                    $('#form_nome').css("border-color", "red");
+
+                } else if (charLength > maxLengthnome) {
+                    //$('#nomeErros').text('Erro, muitos caracteres (Max 50).');
+                    $('#nomeErros').css("color", "red");
+                    $('#form_nome').css("border-color", "red");
+
+                    $(this).val(char.substring(0, maxLengthnome));
+                } else {
+                    //$('#nomeErros').text('Nome é valido!');
+                    $('#nomeErros').css("color", "green");
+                    $('#form_nome').css("border-color", "green");
+                    $('#form_nome').css("border", "2px solid green");
+
+                    checkNome = true;
+
+                    /*$('#form_nome').keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                            
+                        }
+                    });*/
+
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        var minLengthsobrenome = 3;
+        var maxLengthsobrenome = 50;
+        var checkSobrenome = false;
+
+        $(document).ready(function() {
+            $('#form_sobrenome').on('keydown keyup change', function() {
+                var char = $(this).val();
+                var charLength = $(this).val().length;
+
+                if (charLength < minLengthsobrenome) {
+                    //$('#sobrenomeErros').text('Favor digitar seu sobrenome.');
+                    $('#sobrenomeErros').css("color", "grey");
+
+                    $('#form_sobrenome').css("border-color", "grey");
+                    checkSobrenome = false;
+
+                } else if (charLength > maxLengthsobrenome) {
+                    //$('#sobrenomeErros').text('Erro, muitos caracteres (Max 50).');
+                    $('#sobrenomeErros').css("color", "red");
+                    $('#form_sobrenome').css("border-color", "red");
+                    checkSobrenome = false;
+
+                    $(this).val(char.substring(0, maxLengthsobrenome));
+                } else {
+                    //$('#sobrenomeErros').text('Sobrenome valido');
+                    $('#sobrenomeErros').css("color", "green");
+
+                    $('#form_sobrenome').css("border-color", "green");
+                    $('#form_sobrenome').css("border", "2px solid green");
+
+                    checkSobrenome = true;
+
+                    /*$('#form_sobrenome').keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                            //document.getElementById('contact-form').submit();
+                            //window.scrollTo(0, 190);
+                        }
+                    });*/
+
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        var minLengthemail = 12;
+        var maxLengthemail = 60;
+
+        var checkEmail = false;
+
+        function emailIsValid(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+        }
+
+        $(document).ready(function() {
+            $('#form_email').on('keydown keyup change', function() {
+                var char = $(this).val();
+                var charLength = $(this).val().length;
+
+                if (charLength < minLengthemail) {
+                    $('#emailErros').text('Favor digitar Email.');
+                    $('#emailErros').css("color", "grey");
+
+                    //$('#form_email').css("color", "grey");
+                    checkEmail = false;
+
+                } else if (charLength > maxLengthemail) {
+                    $('#emailErros').text('Email com muitos caracteres (Max 50).');
+                    $('#emailErros').css("color", "red");
+                    $('#form_email').css("border-color", "red");
+                    checkEmail = false;
+
+                    $(this).val(char.substring(0, maxLengthemail));
+                } else {
+
+                    if (emailIsValid(char)) {
+
+                        $('#emailErros').text('Email válido');
+                        $('#emailErros').css("color", "green");
+                        $('#form_email').css("border-color", "green");
+                        $('#form_email').css("border", "2px solid green");
+
+                        checkEmail = true;
+                    } else {
+                        $('#emailErros').text('Email inválido');
+                        $('#form_email').css("border-color", "red");
+                        $('#form_email').css("border", "2px solid red");
+                        checkEmail = false;
+
+                    }
+
+                    /*$('#form_email').keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                            //document.getElementById('contact-form').submit();
+                            //window.scrollTo(0, 190);
+                        }
+                    });*/
+
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        var minLengthtelefone = 8;
+        var maxLengthtelefone = 20;
+
+        var checkTel = false;
+        $(document).ready(function() {
+            $('#form_telefone').on('keydown keyup change', function() {
+                var char = $(this).val();
+                var charLength = $(this).val().length;
+
+                if (char == '') {
+                    $('#form_telefone').css("border-color", "grey");
+                }
+
+                if (charLength < minLengthtelefone) {
+                    //$('#telefoneErros').text('Favor digitar Telefone.');
+                    $('#telefoneErros').css("color", "red");
+
+                    //$('#form_telefone').css("color", "red");
+                    checkTel = false;
+
+                } else if (charLength > maxLengthtelefone) {
+                    $('#telefoneErros').text('Invalido (Max 20).');
+                    $('#telefoneErros').css("color", "red");
+                    $('#form_telefone').css("border-color", "red");
+                    checkTel = false;
+
+                    $(this).val(char.substring(0, maxLengthtelefone));
+                } else {
+                    $('#telefoneErros').text('Telefone OK');
+                    $('#telefoneErros').css("color", "green");
+
+                    $('#form_telefone').css("border-color", "green");
+                    $('#form_telefone').css("border", "2px solid green");
+
+                    checkTel = true;
+
+                    /*$('#form_email').keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                            //document.getElementById('contact-form').submit();
+                            //window.scrollTo(0, 190);
+                        }
+                    });*/
+
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        var minLengthmensagem = 15;
+        var maxLengthmensagem = 1500;
+
+        var checkMsg = false;
+
+        $(document).ready(function() {
+            $('#form_mensagem').on('keydown keyup change', function() {
+                var char = $(this).val();
+                var charLength = $(this).val().length;
+
+                if (charLength == 0) {
+                    //$('#mensagemErros').text('Favor digite sua mensagem.');
+                    $('#mensagemErros').css("border-color", "grey");
+
+                    //$('#form_mensagem').css("color", "grey");
+                    checkMsg = false;
+
+                    if (charLength < minLengthmensagem) {
+                        //$('#mensagemErros').text('Mensagem com poucos caracteres');
+                        $('#mensagemErros').css("color", "red");
+                        checkMsg = false;
+                    }
+
+                } else if (charLength > maxLengthmensagem) {
+                    $('#mensagemErros').text('Muitos caracteres (Max 1500).');
+                    $('#mensagemErros').css("color", "red");
+
+                    $('#form_mensagem').css("border-color", "red");
+                    checkMsg = false;
+
+                    $(this).val(char.substring(0, maxLengthmensagem));
+                } else {
+                    //$('#mensagemErros').text('Mensagem válida');
+                    $('#mensagemErros').css("color", "green");
+
+                    $('#form_mensagem').css("border-color", "green");
+                    $('#form_mensagem').css("border", "2px solid green");
+
+                    checkMsg = true;
+
+                    /*$('#form_email').keypress(function(event) {
+                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                        if (keycode == '13') {
+                            //document.getElementById('contact-form').submit();
+                            //window.scrollTo(0, 190);
+                        }
+                    });*/
+
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        function confirmaContato() {
+
+            if (checkNome == true && checkSobrenome == true && checkTel == true && checkEmail == true && checkMsg ==
+                true) {
+                document.getElementById('contact-form').submit();
+            } else alert("Favor preencher todas as informações antes de enviar a mensagem.");
+
+        }
+    </script>
+
+    <!-- Principal JavaScript do Bootstrap
+    ================================================= = -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.js" type="text/javascript"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+    <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
+    <script src="./node_modules/assets/js/vendor/holder.min.js"></script>
+
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/aos.js" type="text/javascript"></script>
+    <script src="js/back-to-top-contato.js" type="text/javascript"></script>
+    <script src="js/main-contato.js" type="text/javascript"></script>
+
+    <script>
+        AOS.init({
+            easing: 'slide',
+            duration: 500
+        });
+    </script>
+
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-6011328-12', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+</body>
+
+</html>
