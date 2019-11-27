@@ -557,7 +557,7 @@ section .content {
 .bg1 {
     /*background-image: url('img/casa_vidro_exemplo.jpg');*/
     background-image: url('../img/dividros-vidro-fachada.jpg');
-    transform: rotate(2deg);
+    /*transform: rotate(2deg);*/
 }
 
 .bg4 {
