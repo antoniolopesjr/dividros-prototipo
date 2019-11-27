@@ -568,7 +568,7 @@ section .content {
         height: 90%;
     }
     .parallax--bg {
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
 }
 
