@@ -1,0 +1,39 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h1 {
+        margin-bottom: 40px;
+        margin-top: 120px;
+    }
+}
+
+h1 {
+    margin-bottom: 40px;
+    margin-top: 120px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #797979;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    transition: all .2s;
+}
+
+.btn-send:hover {
+    background-color: #00e636;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
