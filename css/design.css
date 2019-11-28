@@ -536,6 +536,7 @@ section .content {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-background-size: length_x length_y;
 }
 
 .container--huge {
