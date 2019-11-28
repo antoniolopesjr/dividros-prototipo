@@ -539,15 +539,15 @@ section .content {
 }
 
 .container--huge {
-    height: 175vh;
+    height: 175%;
 }
 
 .container--big {
-    height: 100vh;
+    height: 100%;
 }
 
 .container--small {
-    height: 40vh;
+    height: 40%;
 }
 
 .container--random {
@@ -562,13 +562,16 @@ section .content {
 
 @media only screen and (max-device-width: 1024px) {
     .bg1 {
-        height: 90%;
+        height: 98%;
     }
     .parallax--container {
-        height: 90%;
+        height: 98%;
     }
     .parallax--bg {
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
