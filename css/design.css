@@ -535,8 +535,9 @@ section .content {
 .parallax--bg {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    -webkit-background-size: length_x length_y;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
 }
 
 .container--huge {
