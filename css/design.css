@@ -573,7 +573,7 @@ section .content {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
         -webkit-background-size: 100%;
         -moz-background-size: 100%;
     }
