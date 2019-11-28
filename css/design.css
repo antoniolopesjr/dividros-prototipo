@@ -574,6 +574,8 @@ section .content {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
     }
 }
 
