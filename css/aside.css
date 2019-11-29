@@ -1,0 +1,240 @@
+.home-section{
+    width: 100%;
+    display: block;    
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-dark,
+.bg-dark-lighter,
+.bg-dark-alfa-30,
+.bg-dark-alfa-50,
+.bg-dark-alfa-70,
+.bg-dark-alfa-90,
+.bg-dark-alfa,
+.bg-color,
+.bg-color-lighter,
+.bg-color-alfa-30,
+.bg-color-alfa-50,
+.bg-color-alfa-70,
+.bg-color-alfa-90,
+.bg-color-alfa{
+    color: #fff;
+}
+.bg-dark a,
+.bg-dark-lighter a,
+.bg-dark-alfa-30 a,
+.bg-dark-alfa-50 a,
+.bg-dark-alfa-70 a,
+.bg-dark-alfa-90 a,
+.bg-dark-alfa a,
+.bg-color a,
+.bg-colorlighter a,
+.bg-color-alfa-30 a,
+.bg-color-alfa-50 a,
+.bg-color-alfa-70 a,
+.bg-color-alfa-90 a,
+.bg-color-alfa a{
+    color: rgba(255,255,255, .8);
+    padding-bottom: 3px;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.bg-dark a:hover,
+.bg-dark-lighter a:hover,
+.bg-dark-alfa-30 a:hover,
+.bg-dark-alfa-50 a:hover,
+.bg-dark-alfa-70 a:hover,
+.bg-dark-alfa-90 a:hover,
+.bg-dark-alfa a:hover,
+.bg-color a:hover,
+.bg-color-lighter a:hover,
+.bg-color-alfa-30 a:hover,
+.bg-color-alfa-50 a:hover,
+.bg-color-alfa-70 a:hover,
+.bg-color-alfa-90 a:hover,
+.bg-color-alfa a:hover{
+    color: rgba(255,255,255, 1);
+    text-decoration: none;
+}
+
+.bg-dark-alfa-50:before,
+.bg-dark-alfa-50 .YTPOverlay:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(34,34,34, .5);
+}
+
+.fixed-height-large,
+.fixed-height-medium,
+.fixed-height-small{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fixed-height-large{
+    min-height: 800px;
+}
+.fixed-height-medium{
+    min-height: 700px;
+}
+.fixed-height-small{
+    min-height: 600px;
+}
+
+.home-content{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.hs-line-8 {
+        font-size: 12px;
+    } 
+	
+	.hs-line-8{
+    margin-top: 0;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    line-height: 1.2;
+    opacity: .75;
+}
+.hs-line-8.no-transp{
+    opacity: 1;
+}
+
+.hs-line-6.no-transp{
+    opacity: 1;
+}
+
+.no-transp{
+    opacity: 1 !important;
+}
+
+.font-alt{
+    font-family: Dosis, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.hs-line-14{
+    margin-top: 0;
+    position: relative;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .hs-wrap {
+        max-width: 320px;
+        padding-top: 27px;
+        padding-bottom: 33px;
+    }
+    .hs-line-1 {
+        font-size: 24px;
+    }
+    .hs-line-2{
+        font-size: 36px;
+    }    
+    .hs-line-3 {
+        font-size: 13px;
+    }
+    .hs-image{
+        display: none;
+    }
+    
+    .hs-wrap-1{
+        max-width: 240px;
+    }    
+    .hs-line-5{
+        font-size: 44px;
+        letter-spacing: 0.28em;
+    }
+    .hs-line-6{
+        font-size: 16px;
+    }
+    .hs-line-7{
+        font-size: 32px;
+    }
+    
+    .hs-line-9{
+        font-size: 48px;
+    } 
+    .hs-line-10 {
+        padding: 5px 8px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .hs-line-10 > span {
+        margin: 0;
+    }
+    
+    .hs-line-11{
+        font-size: 24px;
+    }
+    
+    .hs-line-12{
+        font-size: 44px;
+    }
+    .hs-line-13{
+        font-size: 60px;
+        letter-spacing: 0.1em;
+    }
+    .hs-line-14{
+        font-size: 24px;
+        letter-spacing: 0.3em;
+    }
+}
+
+.mobile .page-section, .mobile .home-section, .mobile .small-section{
+    background-attachment: scroll;
+}
+
+
+
+
+
+
+/* Home content */
+
+.home-content{
+    position: relative;
+}
+.home-text{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+.container .work-grid-3 .work-item,
+    .work-grid-5 .work-item {
+        width: 100%;
+    } 
+}
