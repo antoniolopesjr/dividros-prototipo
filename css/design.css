@@ -92,6 +92,7 @@ html {
     .navbar .navbar-nav .nav-item {
         padding-right: 10px;
     }
+
     .navbar .navbar-nav .nav-item a {
         font-size: 12px;
     }
@@ -108,21 +109,27 @@ html {
     .menu-top ul li:first-child {
         border-right: none;
     }
+
     .menu-top .d-hidden {
         display: none;
     }
+
     .d-hidden {
         display: none;
     }
+
     .d-hidden-md {
         display: block;
     }
+
     #slider {
         padding-top: 110px;
     }
+
     #company {
         background: none;
     }
+
     #about h2 {
         padding: 10px;
     }
@@ -132,33 +139,43 @@ html {
     .menu-top ul li:first-child {
         border-right: none;
     }
+
     .menu-top .d-hidden {
         display: none;
     }
+
     .navbar .navbar-brand img {
         max-height: 40px;
     }
+
     .d-hidden {
         display: none;
     }
+
     .d-hidden-md {
         display: block;
     }
+
     #slider {
         padding-top: 100px;
     }
+
     #company {
         background: none;
     }
+
     #about h2 {
         padding: 30px;
     }
+
     #units .btn-map {
         margin: 15px 5px;
     }
+
     #contact .col-md-6 {
         padding: 50px 20px;
     }
+
     #group-companies img {
         margin: 35px 0;
     }
@@ -259,6 +276,7 @@ html {
         bottom: 7px;
         left: 10px;
     }
+
     .dividros-footer-social-navbar li a span {
         display: none;
     }
@@ -462,6 +480,7 @@ html {
         opacity: 0;
         -webkit-transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -476,6 +495,7 @@ html {
         opacity: 0;
         transform: translateY(20px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -524,6 +544,14 @@ section .content {
     z-index: -10;
 }
 
+/*.parallax {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}*/
+
 .parallax {
     position: fixed;
     width: 100%;
@@ -535,9 +563,7 @@ section .content {
 .parallax--bg {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
+    background-size: cover;
 }
 
 .container--huge {
@@ -556,26 +582,20 @@ section .content {
     height: 452px;
 }
 
-.bg1 {
-    /*background-image: url('img/casa_vidro_exemplo.jpg');*/
-    background-image: url('../img/dividros-vidro-fachada.jpg');
-    /*transform: rotate(2deg);*/
-}
-
 @media only screen and (max-device-width: 1024px) {
     .bg1 {
         height: 98%;
     }
+
     .parallax--container {
         height: 98%;
     }
+
     .parallax--bg {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
-        -webkit-background-size: 100%;
-        -moz-background-size: 100%;
+        background-size: cover;
     }
 }
 
@@ -648,6 +668,7 @@ section .content {
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px)
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -662,6 +683,7 @@ section .content {
         -ms-transform: translateY(-20px) translate3d(0, 0, 0);
         transform: translateY(-20px) translate3d(0, 0, 0)
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0) translate3d(0, 0, 0);
@@ -776,18 +798,18 @@ section .content {
 .navbar {
     background-image: transparent !important;
     /*transition: all 0.5s ease;*/
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .navbar.solid {
     background-image: linear-gradient(to right bottom, #696a6f, #707177, #76787e, #7d8086, #83878e, #8a8e95, #91959d, #989ca4, #a1a4ac, #abadb5, #b4b5bd, #bebec6) !important;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -webkit-transition: all .3s;
-    transition: all .3s;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .grid {
@@ -958,11 +980,6 @@ figure.effect-julia:hover p {
     transform: translate3d(0, 0, 0);
 }
 
-.content_teste {
-    padding: 0 10px;
-    text-align: center;
-}
-
 
 /* Media queries */
 
@@ -971,6 +988,7 @@ figure.effect-julia:hover p {
         padding: 0 10px;
         text-align: center;
     }
+
     .grid figure {
         display: inline-block;
         float: none;
@@ -1003,18 +1021,23 @@ figure.effect-julia:hover p {
     0% {
         opacity: 0
     }
+
     20% {
         opacity: 0.2
     }
+
     40% {
         opacity: 0.4
     }
+
     60% {
         opacity: 0.6
     }
+
     80% {
         opacity: 0.8
     }
+
     100% {
         opacity: 1
     }
@@ -1047,7 +1070,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: -150px 0 0 -150px
-    /* is width and height divided by two */
+        /* is width and height divided by two */
 }
 
 #myBtn {
@@ -1302,6 +1325,7 @@ body {
 /* Turn off parallax scrolling for tablets and phones */
 
 @media only screen and (max-device-width: 1024px) {
+
     .bg-image,
     .bgimg-1,
     .bgimg-2,
@@ -1325,6 +1349,7 @@ body {
 }
 
 @media only screen and (max-device-width: 1024px) {
+
     .bgimg-1,
     .bgimg-2,
     .bgimg-3,
@@ -1365,6 +1390,7 @@ body {
         bottom: 10px;
         right: 10px;
     }
+
     .texto-cebrace {
         color: #ddd;
         background-color: #282E34;
@@ -1373,6 +1399,7 @@ body {
         text-align: justify;
         font-size: 1rem;
     }
+
     .texto-dividros {
         text-align: center;
         padding: 40px 50px;
@@ -1399,10 +1426,12 @@ body {
         transform: translateY(1rem);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0rem);
         opacity: 1;
     }
+
     0% {
         transform: translateY(1rem);
         opacity: 0;
@@ -1414,10 +1443,12 @@ body {
         -webkit-transform: transform;
         -webkit-opacity: 0;
     }
+
     100% {
         -webkit-transform: translateY(0);
         -webkit-opacity: 1;
     }
+
     0% {
         -webkit-transform: translateY(1rem);
         -webkit-opacity: 0;
@@ -1457,6 +1488,7 @@ body {
     .dropdown-menu {
         background-image: linear-gradient(to bottom, #63656d, #656870, #686a73, #6a6d77, #6c707a, #6f737e, #737781, #767a85, #7c7f8b, #828490, #888996, #8e8e9b) !important;
     }
+
     .navbar {
         background-color: rgba(136, 135, 135, 0.7) !important;
     }
