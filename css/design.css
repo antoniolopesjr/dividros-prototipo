@@ -1630,7 +1630,10 @@ body {
     .hovereffect a.info {
         display: none;
     }
-    /*.hovereffect:hover .overlay {
+    .hovereffect .overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .hovereffect h2 {
         display: none;
-    }*/
+    }
 }
