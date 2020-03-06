@@ -11,131 +11,220 @@
     <meta name="author" content="Equipe de TI - Divine Vidros de Segurança">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5CRFPG4');
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="src/img/logo.png">
 
     <!-- Principal CSS do Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="src/bootstrap/dist/css/bootstrap.css">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 
-    <link href="css/design.css" rel="stylesheet" type='text/css'>
+    <link href="src/css/design.css" type="text/css" rel="stylesheet">
+    <!--<link href="src/css/timeline.css" type="text/css" rel="stylesheet">-->
 
-    <link rel="stylesheet" type='text/css' href="css/animate.css">
-    <link rel="stylesheet" type='text/css' href="css/flaticon.css">
-    <link rel="stylesheet" type='text/css' href="css/icomoon.css">
-    <link rel="stylesheet" type='text/css' href="css/loader.css">
-
-    <link rel="stylesheet" type='text/css' href="css/aos.css">
-
-    <link rel="stylesheet" type='text/css' href="css/aside.css">
+    <link rel="stylesheet" type="text/css" href="src/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="src/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="src/css/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="src/css/loader.css">
+    <link rel="stylesheet" type="text/css" href="src/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="src/css/aside.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href='css/font-ubuntu.css' rel='stylesheet' type='text/css'>
-    <link href='css/font-vollkorn.css' rel='stylesheet' type='text/css'>
+    <link href="src/css/font-ubuntu.css" rel="stylesheet" type="text/css">
+    <link href="src/css/font-vollkorn.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
-    <style type="text/css">
-        .tab-pane.active {
-            /*animation: slide-down 0.2s ease-out;*/
-            -webkit-animation: zoomIn 300ms ease-in-out;
-            /* Chrome, Safari, Opera */
-            animation: zoomIn 300ms ease-in-out;
+    <style>
+        h1 span {
+            white-space: nowrap;
         }
         
-        .navbar .navbar-nav .nav-item a {
-            font-size: .8rem;
-            color: #ffffff;
-            text-transform: uppercase;
-            font-weight: 500;
-            /*letter-spacing: .3em;*/
-            letter-spacing: 7px;
-            /*font:"Neuton";*/
-            color: #ffffff;
-            text-shadow: 2px 3px 3px #000;
-            padding: 10px;
-            border: 2px solid transparent;
-            border-radius: 2px;
-            -webkit-transition: all .4s ease;
-            -moz-transition: all .4s ease;
-            -o-transition: all .4s ease;
-            transition: all .4s ease;
+        .dividros-section p {
+            text-align: justify !important;
         }
         
-        .navbar .navbar-nav .nav-item a:hover,
-        .navbar .navbar-nav .nav-item a:focus {
-            color: rgb(31, 30, 30);
-            text-shadow: 3px 4px 4px rgb(53, 52, 52);
-            background-color: transparent;
-            border: 2px solid #fff
+        .dividros-footer p {
+            text-align: center !important;
         }
         
-        #myImg {
-            -webkit-transition: transition 0.3s;
-            -moz-transition: transition 0.3s;
-            -o-transition: transition 0.3s;
-            transition: 0.3s;
+        .footer-link {
+            text-align: center !important;
         }
         
-        #myImg:hover {
-            opacity: 0.7;
+        .about-img {
+            position: relative;
+            margin: 30px;
         }
         
-        .modal-dialog {
-            max-width: 80%;
-            margin: 1.75rem auto;
+        .about-img img {
+            width: 100%;
+            border: 8px solid #fff;
+            transition: .5s;
         }
         
-        .modal-content {
-            margin: auto;
+        .about-content h2 {
+            color: #585858;
+            font-weight: 700;
+            margin: 0 0 20px;
+            padding: 0;
+        }
+        
+        .about-content h3 {
+            font-size: 1.55rem;
+        }
+        
+        .about-image {
+            height: 400px;
+            width: 500px;
+            margin-bottom: 30px;
+            margin-right: 30px;
+            float: right;
+        }
+        /*.img-logo-main {
             display: block;
-            /*width: 80%;*/
-            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            top: 50%;
+        }*/
+        
+        .local-scroll {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        .modal-dialog,
-        #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-        
-        @-webkit-keyframes zoom {
-            from {
-                -webkit-transform: scale(0)
+        @media only screen and (max-device-width: 1024px) {
+            .about-content h2 {
+                font-weight: 500;
+                margin: 0 0 10px;
             }
-            to {
-                -webkit-transform: scale(1)
+            .about-content h3 {
+                font-size: 20px;
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+            .about-content {
+                padding-top: 40px;
+            }
+            .about-image {
+                margin-right: 0px;
+                width: 100%;
             }
         }
         
-        @keyframes zoom {
-            from {
-                transform: scale(0)
-            }
-            to {
-                transform: scale(1)
-            }
+        .description-flex-container p {
+            text-align: center !important;
         }
         
-        .zoomImage {
-            padding: 50px;
-            -webkit-transition: transform .2s;
-            -moz-transition: transform .2s;
-            -o-transition: transform .2s;
-            transition: transform .2s;
-            /* Animation */
-            margin: 0 auto;
+        .section-valores {
+            padding: 60px 0;
+        }
+        /*.section-valores .section-title {
+            text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }*/
+        
+        #tabs {
+            background: transparent;
+            color: #424949;
         }
         
-        .zoomImage:hover {
-            transform: scale(1.5);
-            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        #tabs h6.section-title {
+            color: #424949;
         }
         
-        .dividros-section .tab-content .tab-pane h2 {
+        #tabs .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: #363636;
+            background-color: transparent;
+            border-color: transparent transparent #535353;
+            border-bottom: 4px solid !important;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: bold;
+        }
+        
+        #tabs .nav-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            color: rgb(133, 133, 133);
+            font-size: 20px;
+        }
+        
+        .texto-valores {
+            font-weight: 500;
+            font-size: 30px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            /*text-align: center;*/
+        }
+        
+        .py-md-5 {
+            padding-top: 5rem !important;
+            padding-bottom: 5rem !important;
+        }
+        
+        .local-scroll {
+            padding-top: 7rem !important;
+        }
+        
+        @media only screen and (max-device-width: 1024px) {
+            .texto-valores {
+                font-weight: 500;
+                font-size: 22px;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            .nav-item {
+                padding-right: 0.5rem !important;
+                padding-top: 0.5rem !important;
+            }
+            .local-scroll {
+                padding-top: 8rem !important;
+            }
+        }
+        
+        .text-empresa>span {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.592);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            transition: color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+            transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media only screen and (max-device-width: 1024px) {
+            .text-empresa {
+                font-size: 20px;
+            }
+            .text-empresa>span {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+            }
         }
     </style>
 
@@ -152,17 +241,16 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-box" data-aos="zoom-out-down" data-aos-once="true" data-aos-delay="700">
         <div class="menu-top clearfix">
-            <div class="container">
+            <div class="container" style="display: block;">
                 <div class="row">
 
                     <div class="col-md-8" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
                         <span class="text-left">
                             <ul class="list-inline">
                                 <li class="list-inline-item">WhatsApp
-                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932"
-                                        target="_blank">(37) 9.9158-1932 </a>
-                                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932"
-                                        target="_blank"><i class="fa fa-whatsapp" style="font-size:26px"></i></a>
+                                    <a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow'>(37) 99983-3967 </a>
+                                    <a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow'><i
+                                            class="fa fa-whatsapp" style="font-size:26px"></i></a>
                                 </li>
                             </ul>
                         </span>
@@ -184,7 +272,7 @@
 
         <div class="container menu-bottom">
             <a class="navbar-brand mr-0 mr-md-2 logo-small" href="index.html" aria-label="Dividros" title="Dividros" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
-                <img class="navbar-brand zoom img-fluid" src="img/logo.png" alt="Logo Dividros" width="85" height="60">
+                <img class="navbar-brand zoom img-fluid logo-navbar" src="src/img/logo_dividros_com_slogan.png" alt="Logo Dividros" width="85" height="60">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1300">
@@ -207,117 +295,198 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-left animate slideIn" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="esquadria.html">Esquadrias de Alumínio</a>
-                            <a class="dropdown-item" href="espelho.html">Espelho</a>
-                            <a class="dropdown-item" href="acm.html">ACM</a>
+                            <a class="dropdown-item" href="espelho.html">Espelhos</a>
+                            <!--<a class="dropdown-item" href="acm.html">ACM</a>-->
                             <a class="dropdown-item" href="janelaseportas.html">Janelas e portas</a>
-                            <a class="dropdown-item" href="pvc.html">PVC</a>
+                            <!--<a class="dropdown-item" href="pvc.html">PVC</a>-->
                             <a class="dropdown-item" href="box.html">Box</a>
-                            <a class="dropdown-item" href="vidromultilaminado.html">Multilaminado</a>
-                            <a class="dropdown-item" href="vidrotemperado.html">Vidro Temperado</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="projetos.html">Projetos</a>
+                            <!--<a class="dropdown-item" href="vidromultilaminado.html">Multilaminado</a>-->
+                            <!--<a class="dropdown-item" href="vidrotemperado.html">Vidro Temperado</a>-->
+                            <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="projetos.html">Projetos</a>-->
                         </div>
                     </li>
                     <li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1800">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1900">
+                    <!--<li class="nav-item " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1900">
                         <a class="nav-link" href="portfolio.html">Portfólio</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2100">
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav mr-auto dividros-footer-social-navbar list-unstyled mb-0" data-aos="flip-down" data-aos-once="true" data-aos-delay="2200">
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-instagram"></span></a>
+
+                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">
+                        <a class="nav-link zoom" href="https://ornato.dividros.com.br" target="_blank" style="color: rgb(31, 30, 30);text-shadow: 2px 3px 3px rgb(151, 151, 151); padding-bottom: 8px; padding-top: 10px;border-top: 2px solid rgb(27, 27, 27); border-bottom: 2px solid rgb(27, 27, 27); border-right: 2px solid rgb(27, 27, 27); border-left: 2px solid rgb(27, 27, 27); border-radius: 12px;">Comprar
+                            <img class="img-fluid" src="src/img/cart-market.png" width="25" height="20">
+                        </a>
                     </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-facebook"></span></a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-linkedin"></span></a>
-                    </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-youtube"></span></a>
+                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2100" style="display: none;">
+                        <a class="nav-link" href="contato.html">Contato</a>
                     </li>
 
+                </ul>
+                <ul class="navbar-nav mr-auto dividros-footer-social-navbar list-unstyled mb-0" data-aos="flip-down" data-aos-once="true" data-aos-delay="2200">
+                    <li data-aos="fade-up" data-aos-once="true"><a href="http://www.instagram.com/dividros" target="_blank"><span class="icon-instagram"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt-br.facebook.com/dividros/" target="_blank"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt.linkedin.com/company/dividros" target="_blank"><span class="icon-linkedin"></span></a>
+                    </li>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://www.youtube.com/channel/UCrZIuHrni_zvi1RfYjUaRng" target="_blank"><span
+                                class="icon-youtube"></span></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="home-section parallax-2 fixed-height-medium" data-background="img/casa_esquadria.jpg" id="home">
+    <!--<section class="home-section parallax-2 fixed-height-medium" data-background="src/img/dividros-vidro-fachada.jpg" id="home">
         <div class="js-height-parent container">
 
-            <div class="home-content" data-aos="zoom-in" data-aos-once="true">
+            <div class="home-content" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">
                 <div class="home-text">
-
-                    <h2 class="hs-line-15 font-alt mb-50 mb-xs-30" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">
-                        Conheça mais sobre a Dividros
-                    </h2>
-
-                    <h1 class="hs-line-8 font-alt mb-50 mb-xs-30" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">
-                        A Dividros coloca a disposição dos clientes o que há de mais moderno de soluções em vidros.
-                    </h1>
-
+                    <div class="text-empresa">
+                        <span>D</span>
+                        <span>I</span>
+                        <span>V</span>
+                        <span>I</span>
+                        <span>D</span>
+                        <span>R</span>
+                        <span>O</span>
+                        <span>S</span>
+                    </div>
                 </div>
             </div>
 
         </div>
+    </section> -->
+
+    <section class="home-section parallax-2 fixed-height-medium" data-background="src/img/dividros-vidro-fachada.jpg" id="home">
+        <div class="js-height-parent container">
+
+            <div class="home-content" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">
+                <div class="home-text">
+
+                    <div class="local-scroll hidden-xs">
+                        <img class="img-logo-main" src="src/img/logo_dividros_com_slogan.png" alt="Logo Dividros">
+                    </div>
+                </div>
+            </div>
+            <!-- End Hero Content -->
+        </div>
     </section>
 
-
-    <section class="dividros-section dividros-no-pt" style="padding: 2em 0;">
+    <section class="dividros-section servicos-section bg-light">
         <div class="container">
-            <div class="row d-md-flex">
-                <div class="col-md-6 img about-image" style="background-image: url('img/pele-de-vidro-temperado.jpg'); box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);" data-aos="zoom-in" data-aos-once="true" data-aos-delay="50">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="img about-image" style="background-image: url('src/img/fachada-dividros-2017.JPG'); box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);" data-aos="zoom-in" data-aos-once="true" data-aos-delay="50">
+                        <!--<div class="local-scroll hidden-xs text-center">
+                            <img class="img-logo-main" src="src/img/logo_dividros_com_slogan.png" alt="Logo Dividros">
+                        </div> -->
+                    </div>
                 </div>
-                <div class="col-md-6  p-md-5">
-                    <div class="row py-md-5">
-                        <div class="col-md-12 nav-link-wrap mb-5">
-                            <div class="nav  nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" data-aos="fade-up" data-aos-once="true" data-aos-delay="50" id="v-pills-Quemsomos-tab" data-toggle="pill" href="#v-pills-Quemsomos" role="tab" aria-controls="v-pills-Quemsomos" aria-selected="true" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Quem
-                                    somos</a>
-                                <a class="nav-link" data-aos="fade-up" data-aos-once="true" data-aos-delay="100" id="v-pills-missao-tab" data-toggle="pill" href="#v-pills-missao" role="tab" aria-controls="v-pills-missao" aria-selected="false" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Missao</a>
-                                <a class="nav-link" data-aos="fade-up" data-aos-once="true" data-aos-delay="150" id="v-pills-objetivos-tab" data-toggle="pill" href="#v-pills-objetivos" role="tab" aria-controls="v-pills-objetivos" aria-selected="false" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Objetivos</a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 d-flex align-items-center">
-                            <div class="tab-content " id="v-pills-tabContent">
-                                <div class="tab-pane fade show active" id="v-pills-Quemsomos" role="tabpanel" aria-labelledby="v-pills-Quemsomos-tab">
-                                    <div>
-                                        <h2 class="mb-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
-                                            Quem somos</h2>
-                                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100">Além de ser a primeira empresa representante da marca Divine Vidros de Segurança. </p>
-                                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100">A Dividros coloca a disposição dos clientes o que há de mais moderno em soluções em vidros.
-                                            <p><a href="produtos.html" class="btn btn-primary p-3" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Conheça
-                                                    nossos produtos</a></p>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-missao" role="tabpanel" aria-labelledby="v-pills-missao-tab">
-                                    <div>
-                                        <h2 class="mb-4">Missão</h2>
-                                        <p>Nossa missão blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla</p>
-                                        <p>Nossa missão blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla</p>
-                                        <p><a href="produtos.html" class="btn btn-primary p-3" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Conheça nossos
-                                                produtos</a></p>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-objetivos" role="tabpanel" aria-labelledby="v-pills-objetivos-tab">
-                                    <div>
-                                        <h2 class="mb-4">Objetivos</h2>
-                                        <p>Nossos objetivos blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla</p>
-                                        <p>Nossos objetivos blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla</p>
-                                        <p><a data-aos="fade-up" data-aos-once="true" data-aos-delay="150" href="produtos.html" class="btn btn-primary p-3" style="box-shadow: 0 3px 6px 0 rgba(31, 32, 34, 0.28);">Conheça nossos
-                                                produtos</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                <div class="col-lg-7 col-md-6">
+                    <div class="about-content">
+                        <h2 style="color: #000;">Sobre a empresa</h2>
+                        <h3 style="color: #585858;">Nossa empresa nasceu em Divinópolis-MG em 1986 no mercado de vidraçaria.
+                        </h3>
+                        <p>Oferecendo além dos produtos e serviços convencionais, um atendimento personalizado, conforto e beleza para residências, escritórios e lojas.</p>
+                        <p>A Dividros, vem desde então consolidando-se no mercado como uma empresa sempre à frente do seu tempo, prezando pela excelência no atendimento ao cliente, aliado a produtos de tecnologia de ponta e qualidade superior.</p>
+                        <p>Nossa longa experiência de mercado, nos permite oferecer soluções de alta tecnologia e sustentáveis. Estamos sempre antenados à evolução do mercado vidreiro, buscando oferecer uma melhor experiência aos nossos clientes, parceiros
+                            e funcionários</p>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
 
-    <section class="dividros-section">
+
+    <section class="dividros-section" style="font-weight: 500;color: #424949;background-color: rgba(226, 226, 226, 0.692);padding: 0 25px;display: flex;flex-direction: column;position: relative;">
+        <h1 style="text-align: center;height: 38px;margin: 60px 0;">Nossa História, <span>1986–2019</span></h1>
+        <div class="flex-parent">
+            <div class="input-flex-container">
+                <div class="input active">
+                    <span data-year="1986" data-info="Fundação"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2001" data-info="1º Forno de Têmpera"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2013" data-info="Esquadria de Alumínio"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2017" data-info="Esquadria de PVC"></span>
+                </div>
+                <div class="input">
+                    <span data-year="2019" data-info="Top of mind"></span>
+                </div>
+            </div>
+            <div class="description-flex-container">
+                <p class="text-timeline active" style="float: right;">
+                    <img class="img-fluid img-timeline" src="src/img/fachada-dividros-1986.JPG"><br><br> Fundanda em Janeiro de 1986 com o nome de Dividros - Divinópolis Vidros, na Rua Goias 2020 em Divinópolis, interior de MG.</p>
+
+                <p class="text-timeline" style="float: right;">
+                    <img class="img-fluid img-timeline" src="src/img/fachada-dividros-2003.JPG"><br><br> Buscando a verticalização do negócio, lançou sua primeira linha de produção própria de vidro temperado com um forno vertical, através da fundação
+                    da Divine Vidros.</p>
+
+                <p class="text-timeline" style="float: right;">
+                    <img class="img-fluid img-timeline" src="src/img/fachada-dividros-2013.JPG"><br><br> Foi iniciada a comercialização da linha de produtos de Esquadrias de Alumínio, através de parcerias importantes com fornecedores do setor.</p>
+
+                <p class="text-timeline" style="float: right;">
+                    <img class="img-fluid img-timeline" src="src/img/fachada-dividros-2017.JPG"><br><br> Procurando expandir o Mix de produtos e buscando por inovação, iniciou-se a linha de Esquadrias de PVC.</p>
+
+                <p class="text-timeline" style="float: right;">
+                    <img class="img-fluid img-timeline2" src="src/img/top-of-mind-2019.JPG"><br><br> Como recompensa pela constante busca por inovação e satisfação dos seus clientes, foi premiada pela terceira vez consecutiva com o Prêmio Top of mind
+                    na categoria Vidros</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dividros-section dividros-no-pt py-md-5">
+        <div class="container">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-missao-tab" data-toggle="pill" href="#pills-missao" role="tab" aria-controls="pills-missao" aria-selected="true">Missão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-negocio-tab" data-toggle="pill" href="#pills-negocio" role="tab" aria-controls="pills-negocio" aria-selected="false">Negócio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-visao-tab" data-toggle="pill" href="#pills-visao" role="tab" aria-controls="pills-visao" aria-selected="false">Visão</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-valores-tab" data-toggle="pill" href="#pills-valores" role="tab" aria-controls="pills-valores" aria-selected="false">Valores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-motivacao-tab" data-toggle="pill" href="#pills-motivacao" role="tab" aria-controls="pills-motivacao" aria-selected="false">Motivação</a>
+                </li>
+            </ul>
+            <div class="align-items-center">
+                <div class="tab-content text-center" id="pills-tabContent">
+                    <div class="tab-pane fade show active texto-valores" id="pills-missao" role="tabpanel" aria-labelledby="pills-missao-tab">Fornecer soluções seguras em fechamento de vãos, com controle, disciplina e resultado.</div>
+                    <div class="tab-pane fade texto-valores" id="pills-negocio" role="tabpanel" aria-labelledby="pills-negocio-tab">
+                        Soluções em fechamento de vãos com segurança, conforto e modernidade.
+                    </div>
+                    <div class="tab-pane fade texto-valores" id="pills-visao" role="tabpanel" aria-labelledby="pills-visao-tab">Ser referência nos mercados que atua, com respeito aos clientes, fornecedores e colaboradores.
+                    </div>
+                    <div class="tab-pane fade texto-valores" id="pills-valores" role="tabpanel" aria-labelledby="pills-valores-tab">
+                        Crença em Deus<br> Excelência profissional, ética e transparência<br> Respeito aos clientes, fornecedores e colaboradores<br> Responsabilidade social e cuidado com o meio ambiente.<br>
+                    </div>
+                    <div class="tab-pane fade texto-valores" id="pills-motivacao" role="tabpanel" aria-labelledby="pills-motivacao-tab">
+                        Controle, Disciplina e Resultado.</div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--<section class="dividros-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
@@ -352,10 +521,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section class="dividros-section dividros-parceiros">
+    <!--<section class="dividros-section dividros-parceiros">
         <section class="section-title">
             <div class="container text-center" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                 <h2>Nossos parceiros</h2>
@@ -366,36 +535,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
-                    <a href="http://www.cebrace.com.br" target="_blank" class="partner"><img src="img/cebrace.png" class="img-fluid" alt="Parceiro Cebrace"></a>
+                    <a href="http://www.cebrace.com.br" target="_blank" class="partner"><img src="src/img/cebrace.png" class="img-fluid" alt="Parceiro Cebrace"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
-                    <a href="https://decampaluminio.com.br" target="_blank" class="partner"><img src="img/decamp.jpg" class="img-fluid" alt="Parceiro Decamp"></a>
+                    <a href="https://decampaluminio.com.br" target="_blank" class="partner"><img src="src/img/decamp.jpg" class="img-fluid" alt="Parceiro Decamp"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="250">
-                    <a href="http://www.fermax.com.br" target="_blank" class="partner"><img src="img/fermax.png" class="img-fluid" alt="Parceiro Fermax"></a>
+                    <a href="http://www.fermax.com.br" target="_blank" class="partner"><img src="src/img/fermax.png" class="img-fluid" alt="Parceiro Fermax"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
-                    <a href="http://www.archicentro.com.br/" target="_blank" class="partner"><img src="img/archicentro.png" class="img-fluid" alt="Parceiro Archicentro"></a>
+                    <a href="http://www.archicentro.com.br/" target="_blank" class="partner"><img src="src/img/archicentro.png" class="img-fluid" alt="Parceiro Archicentro"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="450">
-                    <a href="http://projetoaluminio.com.br/" target="_blank" class="partner"><img src="img/projetoal.png" class="img-fluid" alt="Parceiro ProjetoAl"></a>
+                    <a href="http://projetoaluminio.com.br/" target="_blank" class="partner"><img src="src/img/projetoal.png" class="img-fluid" alt="Parceiro ProjetoAl"></a>
                 </div>
             </div>
         </div>
     </section>
+    -->
 
 
     <!--<button onclick="topFunction()" id="myBtn" title="Voltar ao top">&#8593</button>-->
     <div id="topcontrol" title="Voltar ao topo" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
     </div>
 
-    <footer class="dividros-footer dividros-bg-dark dividros-section">
+    <footer id="section-social" class="dividros-footer dividros-bg-dark dividros-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="dividros-footer-widget mb-4 bg-primary p-4">
                         <h2 class="dividros-heading-2">Dividros</h2>
-                        <p>A Dividros trabalha com uma linha de vidros e espelhos, voltada para atender a linha de decoração e moveleiro</p>
+                        <p>A Dividros possui soluções em fechamento de vãos, voltadas para atender a linha de contrução civil e decoração.</p>
                         <ul class="dividros-footer-social list-unstyled mb-0">
                             <li data-aos="fade-up" data-aos-once="true" data-aos-delay="50"><a href="http://www.instagram.com/dividros" target="_blank"><span
                                         class="icon-instagram"></span></a>
@@ -403,7 +573,8 @@
                             <li data-aos="fade-up" data-aos-once="true" data-aos-delay="100"><a href="https://pt-br.facebook.com/dividros/" target="_blank"><span
                                         class="icon-facebook"></span></a>
                             </li>
-                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="200"><a href="" target="_blank"><span class="icon-twitter"></span></a>
+                            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="200"><a href=""><span
+                                        class="icon-twitter"></span></a>
                             </li>
                             <li data-aos="fade-up" data-aos-once="true" data-aos-delay="300"><a href="https://br.pinterest.com/dividrosdivinopolis/" target="_blank"><span
                                         class="icon-pinterest"></span></a>
@@ -420,11 +591,12 @@
                     <div class="dividros-footer-widget mb-4 ml-md-5">
                         <h2 class="dividros-heading-2">Links úteis</h2>
                         <ul class="list-unstyled">
+                            <li><a href="index.html" class="py-2 d-block">Home</a></li>
                             <li><a href="/" style="color: #fff; text-decoration: underline;" class="py-2 d-block">A
                                     Dividros</a></li>
                             <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
-                            <li><a href="portfolio.html" class="py-2 d-block">Portfólio</a></li>
-                            <li><a href="redessociais.html" class="py-2 d-block">Redes Sociais</a></li>
+                            <!--<li><a href="portfolio.html" class="py-2 d-block">Portfólio</a></li>-->
+                            <li><a href="#section-social" class="py-2 d-block">Redes Sociais</a></li>
                             <li><a href="contato.html" class="py-2 d-block">Contato</a></li>
                         </ul>
                     </div>
@@ -434,13 +606,13 @@
                         <h2 class="dividros-heading-2">Produtos</h2>
                         <ul class="list-unstyled">
                             <li><a href="esquadria.html" class="py-2 d-block">Esquadrias</a></li>
-                            <li><a href="espelho.html" class="py-2 d-block">Espelho</a></li>
-                            <li><a href="acm.html" class="py-2 d-block">ACM</a></li>
+                            <li><a href="espelho.html" class="py-2 d-block">Espelhos</a></li>
+                            <!--<li><a href="acm.html" class="py-2 d-block">ACM</a></li>-->
                             <li><a href="janelaseportas.html" class="py-2 d-block">Janelas e portas</a></li>
-                            <li><a href="pvc.html" class="py-2 d-block">PVC</a></li>
+                            <!--<li><a href="pvc.html" class="py-2 d-block">PVC</a></li>-->
                             <li><a href="box.html" class="py-2 d-block">Box</a></li>
-                            <li><a href="vidromultilaminado.html" class="py-2 d-block">Vidro Multilaminado</a></li>
-                            <li><a href="vidrotemperado.html" class="py-2 d-block">Vidro Temperado</a></li>
+                            <!--<li><a href="vidromultilaminado.html" class="py-2 d-block">Vidro Multilaminado</a></li>-->
+                            <!--<li><a href="vidrotemperado.html" class="py-2 d-block">Vidro Temperado</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -452,7 +624,7 @@
                                 <li>
                                     <a href="https://www.google.com/maps/place/Dividros+-+Esquadria,+Fachada,+ACM,+Inox/@-20.1413926,-44.9043281,19.5z/data=!4m13!1m7!3m6!1s0xa0a57128adc27b:0xdd228e3fc4ba92dd!2sR.+Goi%C3%A1s,+220+-+Porto+Velho,+Divin%C3%B3polis+-+MG,+35500-001!3b1!8m2!3d-20.1487731!4d-44.8827374!3m4!1s0xa0a59255bcdf3f:0x1337d7e33b609bb5!8m2!3d-20.1412907!4d-44.9042532"
                                         target="_blank">
-                                        <span class="icon icon-map-marker"></span><span class="text">Rua Góias,
+                                        <span class="icon icon-map-marker"></span><span class="text">Rua Goiás,
                                             2020,
                                             Divinópolis, Minas Gerais</span></a>
                                 </li>
@@ -468,44 +640,48 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 footer-link">
                     <p>
                         Copyright &copy; Todos os direitos reservados | Dividros
                     </p>
-                    <!--<a style="font-size: 10px;" href="https://www.freepik.com/free-photos-vectors/design" target="_blank">Fotos utilizadas nesse site - www.freepik.com</a>-->
+                    <a style="font-size: 10px;" href="https://www.freepik.com/free-photos-vectors/design" target="_blank">Fotos utilizadas nesse site - www.freepik.com</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <div>
-        <a class="whats-icon" href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" data-toggle="tooltip" data-placement="right" title="Clique aqui para comunicação via Whatsapp">
+        <a class="whats-icon" href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' data-toggle="tooltip" data-placement="right" title="Clique aqui para comunicação via Whatsapp">
             <i style="margin-top:16px;" class="fa fa-whatsapp"></i>
         </a>
     </div>
 
     <!-- Principal JavaScript do Bootstrap
-        ================================================= = -->
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/popper.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/back-to-top.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/all.js" type="text/javascript"></script>
+    =================================================-->
+
+    <script src="src/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="src/tether/dist/js/tether.min.js"></script>
+    <script src="src/popper.js/dist/popper.js" type="text/javascript"></script>
+    <script src="src/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="src/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="src/js/main.js" type="text/javascript"></script>
+    <script src="src/js/all.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/js/timeline.js" type="text/javascript"></script>
 
 
     <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
-    <script src="./node_modules/assets/js/vendor/holder.min.js" type="text/javascript"></script>
+    <script src="src/assets/js/vendor/holder.min.js" type="text/javascript"></script>
 
-    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/aos.js" type="text/javascript"></script>
-    <script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
-    <script src="js/SmoothScroll.js" type="text/javascript"></script>
+    <script src="src/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="src/js/aos.js" type="text/javascript"></script>
+    <script src="src/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="src/js/SmoothScroll.js" type="text/javascript"></script>
+    <script src="src/js/back-to-top-contato.js" type="text/javascript"></script>
 
 
     <script id="rendered-js">
@@ -531,10 +707,15 @@
         });
     </script>
 
-    <!-- Google Analytics -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CRFPG4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Analytics - ****antigo
     <script>
         (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
+            i['GoogleAnalyticsObject '] = r;
             i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
@@ -543,12 +724,12 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script ', 'https://www.google-analytics.com/analytics.js ', 'ga ');
 
-        ga('create', 'UA-6011328-12', 'auto');
-        ga('send', 'pageview');
+        ga('create ', 'GTM-5CRFPG4', 'auto ');
+        ga('send ', 'pageview ');
     </script>
-    <!-- End Google Analytics -->
+    <!-- End Google Analytics-->
 
 </body>
 

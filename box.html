@@ -5,251 +5,72 @@
     <title>Dividros Esquadrias de Aluminio</title>
     <!--<meta charset="utf-8">-->
     <meta name="description" content="Esquadrias de aluminio são conhecidas pela sua resistencia a corrosao, atributo este, que pode ser melhorado, dependendo do acabamento dado as esquadrias." />
-    <meta name="keywords" content="esquadrias de aluminio, aluminio divinópolis, dividros, esquadrias divinópolis, esquadrias minas gerais" />
+    <meta name="keywords" content="box para banheiro, box divinopolis, box divinopolis dividros, box banheiro divinópolis, box minas gerais" />
     <meta name="author" content="Equipe de TI - Divine Vidros de Segurança">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5CRFPG4');
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="src/img/logo.png">
 
     <!-- Principal CSS do Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="css/design.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="css/ihover.css">-->
+    <link rel="stylesheet" type="text/css" href="src/bootstrap/dist/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/loader.css">
+    <link href="src/css/design.css" type="text/css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="src/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="src/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="src/css/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="src/css/loader.css">
+    <link rel="stylesheet" type="text/css" href="src/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="src/css/aside.css">
+
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href='css/font-ubuntu.css' rel='stylesheet' type='text/css'>
-    <link href='css/font-vollkorn.css' rel='stylesheet' type='text/css'>
-
+    <link href="src/css/font-ubuntu.css" rel="stylesheet" type="text/css">
+    <link href="src/css/font-vollkorn.css" rel="stylesheet" type="text/css">
+    <script src="src/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 
     <style>
-        #topcontrol {
-            z-index: 99999;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            cursor: pointer;
-            opacity: 0;
-            border: rgb(44, 44, 44) solid 2px;
-            background-color: rgb(209, 209, 209);
-            border-radius: 30%;
-            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            /*-webkit-transition: transform .4s;
-            transition: transform .4s;*/
-            transition: all 0.5s;
-        }
-        
-        #topcontrol:hover {
-            transform: scale(1.15);
-            background-color: rgb(141, 141, 141);
-            border: rgb(250, 231, 60) solid 2px;
-            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-        /*.tab-pane.active { //efeito legal
-            /*animation: slide-down 0.2s ease-out;
-            -webkit-animation: pulse 300ms ease-in-out;
-            /* Chrome, Safari, Opera 
-            animation: pulse 300ms ease-in-out;
-        }*/
-        
-        .tab-pane.active {
-            /*animation: slide-down 0.2s ease-out;*/
-            -webkit-animation: zoomIn 300ms ease-in-out;
-            /* Chrome, Safari, Opera */
-            animation: zoomIn 300ms ease-in-out;
-        }
-        
-        .navbar .navbar-nav .nav-item a {
-            font-size: .8rem;
-            color: #ffffff;
-            text-transform: uppercase;
-            font-weight: 500;
-            /*letter-spacing: .3em;*/
-            letter-spacing: 7px;
-            /*font:"Neuton";*/
-            color: #ffffff;
-            text-shadow: 2px 3px 3px #000;
-            padding: 10px;
-            border: 2px solid transparent;
-            border-radius: 2px;
-            -webkit-transition: all .4s ease;
-            -moz-transition: all .4s ease;
-            -o-transition: all .4s ease;
-            transition: all .4s ease;
-        }
-        
-        .navbar .navbar-nav .nav-item a:hover,
-        .navbar .navbar-nav .nav-item a:focus {
-            color: rgb(31, 30, 30);
-            text-shadow: 3px 4px 4px rgb(53, 52, 52);
-            background-color: transparent;
-            border: 2px solid #fff
-        }
-        
-        #myImg {
-            -webkit-transition: transition 0.3s;
-            -moz-transition: transition 0.3s;
-            -o-transition: transition 0.3s;
-            transition: 0.3s;
-        }
-        
-        #myImg:hover {
-            opacity: 0.7;
-        }
-        
-        .modal-dialog {
-            max-width: 80%;
-            margin: 1.75rem auto;
-        }
-        
-        .modal-content {
-            margin: auto;
+        .text-empresa>span {
             display: block;
-            /*width: 80%;*/
-            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.592);
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            transition: color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+            transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
         }
         
-        .modal-dialog,
-        #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
-        
-        @-webkit-keyframes zoom {
-            from {
-                -webkit-transform: scale(0)
+        @media only screen and (max-device-width: 1024px) {
+            .text-empresa {
+                font-size: 20px;
             }
-            to {
-                -webkit-transform: scale(1)
+            .text-empresa>span {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
             }
-        }
-        
-        @keyframes zoom {
-            from {
-                transform: scale(0)
-            }
-            to {
-                transform: scale(1)
-            }
-        }
-        
-        .zoomImage {
-            padding: 50px;
-            -webkit-transition: transform .2s;
-            -moz-transition: transform .2s;
-            -o-transition: transform .2s;
-            transition: transform .2s;
-            /* Animation */
-            margin: 0 auto;
-        }
-        
-        .zoomImage:hover {
-            transform: scale(1.5);
-            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-        
-        .hovereffect {
-            width: 100%;
-            height: 100%;
-            float: left;
-            overflow: hidden;
-            position: relative;
-            text-align: center;
-            cursor: default;
-        }
-        
-        .hovereffect .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            -webkit-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out
-        }
-        
-        .hovereffect img {
-            display: block;
-            position: relative;
-            -webkit-transition: all .4s linear;
-            transition: all .4s linear;
-        }
-        
-        .hovereffect h2 {
-            text-transform: uppercase;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            font-size: 17px;
-            background: rgba(0, 0, 0, 0.6);
-            -webkit-transform: translatey(-100px);
-            -ms-transform: translatey(-100px);
-            transform: translatey(-100px);
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-            padding: 10px;
-        }
-        
-        .hovereffect a.info {
-            text-decoration: none;
-            display: inline-block;
-            text-transform: uppercase;
-            color: #fff;
-            border: 1px solid #fff;
-            background-color: transparent;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            -webkit-transition: all .1s ease-in-out;
-            transition: all .1s ease-in-out;
-            margin: 50px 0 0;
-            padding: 7px 14px;
-        }
-        
-        .hovereffect a.info:hover {
-            box-shadow: 0 0 5px #fff;
-        }
-        
-        .hovereffect:hover img {
-            -ms-transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-        
-        .hovereffect:hover .overlay {
-            opacity: 1;
-            filter: alpha(opacity=100);
-        }
-        
-        .hovereffect:hover h2,
-        .hovereffect:hover a.info {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -ms-transform: translatey(0);
-            -webkit-transform: translatey(0);
-            transform: translatey(0);
-        }
-        
-        .hovereffect:hover a.info {
-            -webkit-transition-delay: .2s;
-            transition-delay: .2s;
-        }
-        
-        .dividros-section .tab-content .tab-pane h2 {
-            font-size: 20px;
-            font-weight: 600;
         }
     </style>
 
@@ -266,15 +87,15 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-box" data-aos="zoom-out-down" data-aos-once="true" data-aos-delay="700">
         <div class="menu-top clearfix">
-            <div class="container">
+            <div class="container" style="display: block;">
                 <div class="row">
 
                     <div class="col-md-8" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
                         <ul class="text-left list-inline">
                             <li class="list-inline-item">WhatsApp
-                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank">(37)
-                                    9.9158-1932 </a>
-                                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank"><i
+                                <a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow'>(37)
+                                    99983-3967 </a>
+                                <a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow'><i
                                         class="fa fa-whatsapp" style="font-size:26px"></i></a>
                             </li>
                         </ul>
@@ -293,7 +114,7 @@
 
         <div class="container menu-bottom">
             <a class="navbar-brand mr-0 mr-md-2 logo-small" href="index.html" aria-label="Dividros" title="Dividros" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1200">
-                <img class="navbar-brand zoom img-fluid" src="img/logo.png" alt="Logo Dividros" width="85" height="60">
+                <img class="navbar-brand zoom img-fluid" src="src/img/logo_dividros_com_slogan.png" alt="Logo Dividros" width="85" height="60">
             </a>
             <!--<span class="navbar-brand brand-efeito">Dividros</span>-->
 
@@ -310,84 +131,107 @@
                     <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1600">
                         <a class="nav-link" href="empresa.html">Empresa</a>
                     </li>
-                    <li class="nav-item dropdown" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1700">
-                        <a class="nav-link dropdown-toggle" style="font-weight: bold; border-bottom: 2px solid #fff" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown " data-aos="zoom-in" data-aos-once="true" data-aos-delay="1700">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Produtos
                             <!--<i class="fa fa-angle-down"></i>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-left animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="esquadria.html" style="font-weight: bold; border-bottom: 2px solid rgb(173, 173, 173);">Esquadrias de
-                                Alumínio</a>
-                            <a class="dropdown-item" href="espelho.html">Espelho</a>
-                            <a class="dropdown-item" href="acm.html">ACM</a>
+                            <a class="dropdown-item" href="esquadria.html">Esquadrias de Alumínio</a>
+                            <a class="dropdown-item" href="espelho.html">Espelhos</a>
+                            <!--<a class="dropdown-item" href="acm.html">ACM</a>-->
                             <a class="dropdown-item" href="janelaseportas.html">Janelas e portas</a>
-                            <a class="dropdown-item" href="pvc.html">PVC</a>
-                            <a class="dropdown-item" href="box.html">Box</a>
-                            <a class="dropdown-item" href="vidromultilaminado.html">Multilaminado</a>
-                            <a class="dropdown-item" href="vidrotemperado.html">Vidro Temperado</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="projetos.html">Projetos</a>
+                            <!--<a class="dropdown-item" href="pvc.html">PVC</a>-->
+                            <a class="dropdown-item" href="box.html" style="font-weight: bold; border-bottom: 2px solid rgb(173, 173, 173);">Box</a>
+                            <!--<a class="dropdown-item" href="vidromultilaminado.html">Multilaminado</a>-->
+                            <!--<a class="dropdown-item" href="vidrotemperado.html">Vidro Temperado</a>-->
+                            <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="projetos.html">Projetos</a>-->
                         </div>
                     </li>
                     <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1800">
                         <a class="nav-link" href="blog.html">Blog</a>
                     </li>
-                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1900">
-                        <a class="nav-link" href="portfolio.html">Portfólio</a>
-                    </li>
+                    <!--<li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="1900">
+                        <a class="nav-link" href="portfolio.html">Portfólio</a>-->
+
                     <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2100">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+
+                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">
+                        <a class="nav-link zoom" href="https://ornato.dividros.com.br" target="_blank" style="color: rgb(31, 30, 30);text-shadow: 2px 3px 3px rgb(151, 151, 151); padding-bottom: 8px; padding-top: 10px;border-top: 2px solid rgb(27, 27, 27); border-bottom: 2px solid rgb(27, 27, 27); border-right: 2px solid rgb(27, 27, 27); border-left: 2px solid rgb(27, 27, 27); border-radius: 12px;">Comprar
+                            <img class="img-fluid" src="src/img/cart-market.png" width="25" height="20">
+                        </a>
+                    </li>
+                    <li class="nav-item" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2100" style="display: none;">
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
 
                 </ul>
                 <ul class="navbar-nav mr-auto dividros-footer-social-navbar list-unstyled mb-0" data-aos="flip-down" data-aos-once="true" data-aos-delay="2200">
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-instagram"></span></a>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="http://www.instagram.com/dividros" target="_blank"><span class="icon-instagram"></span></a>
                     </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-facebook"></span></a>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt-br.facebook.com/dividros/" target="_blank"><span class="icon-facebook"></span></a>
                     </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-linkedin"></span></a>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://pt.linkedin.com/company/dividros" target="_blank"><span class="icon-linkedin"></span></a>
                     </li>
-                    <li data-aos="fade-up" data-aos-once="true"><a href="#"><span class="icon-youtube"></span></a>
+                    <li data-aos="fade-up" data-aos-once="true"><a href="https://www.youtube.com/channel/UCrZIuHrni_zvi1RfYjUaRng" target="_blank"><span
+                                class="icon-youtube"></span></a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="dividros-section container--big">
-        <div class="caption" data-aos="zoom-in" data-aos-once="true">
 
-            <div class="col-md-12 px-0" data-aos="zoom-in" data-aos-once="true">
-                <h1 class="display-4" style="font-size: 2.5rem" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">Box Para Banheiro</h1>
-                <p class="lead my-3" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">Design e Elegância
-                </p>
-                <!--<p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue lendo...</a></p>-->
-                <!--<img src="img/faixada-vidro.jpg" style="position: relative;" height="300" width="550">-->
+    <!--<section class="home-section parallax-2 fixed-height-medium" data-background="src/img/espelho-banheiro-sofisticado.jpg" id="home">
+        <div class="js-height-parent container">
+
+            <div class="home-content" data-aos="zoom-in" data-aos-once="true">
+                <div class="home-text">
+                    <h2 class="hs-line-15 font-alt mb-50 mb-xs-30" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2200">
+                        Box Para Banheiro
+                    </h2>
+
+                    <h1 class="hs-line-8 font-alt mb-50 mb-xs-30" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">
+                        Design e Elegância
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class="parallax parallax--bg bg4">
 
         </div>
+    </section> -->
 
+    <section class="home-section parallax-2 fixed-height-medium" data-background="src/img/espelho-banheiro-sofisticado.jpg" id="home">
+        <div class="js-height-parent container">
+            <div class="home-content" data-aos="zoom-in" data-aos-once="true" data-aos-delay="2400">
+                <div class="home-text" style="font-size: 30px;">
+                    <div class="text-empresa">
+                        <span>B</span>
+                        <span>O</span>
+                        <span>X</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
-
-
-
 
     <section class="dividros-section dividros-no-pt ftc-no-pb dividros-section-esquadria">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 py-5">
-                    <img src="img/esquadria.png" class="img-fluid" alt="esquadria-de-aluminio" data-aos="fade-up" data-aos-once="true">
+                    <img src="src/img/espelho.jpg" class="img-fluid" alt="espelho" data-aos="fade-up" data-aos-once="true" style="height:350px; width:400px;">
                     <div class="heading-section mt-5" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
                         <h2 class="mb-4">Box Para Banheiro</h2>
                         <p>Em um projeto residencial, o banheiro é um dos ambientes que tem ganhado maior destaque e um olhar cuidadoso de arquitetos e construtores. Sendo o box para banheiro uma das estrelas principais de um acabamento impecável. Pensando
                             nisto, nós auxiliamos você, na escolha do modelo de seu box para banheiro, prezando pelo alto padrão de qualidade do produto e excelência na entrega de serviços de instalação. Nosso box para banheiro, foi especialmente elaborado
                             para tornar sua casa ou projeto, um ambiente agradável, sofisticado, moderno e seguro. Película de segurança para box: Vidros temperados, são considerados vidros de segurança devido a sua alta resistência mecânica e, caso se
-                            quebrem, seus fragmentos são menos cortantes. Com a película de segurança aplicada corretamente, você terá a segurança dos fragmentos presos nesta película. O que torna seu box de vidro temperado muito mais seguro. O safety
+                            quebrem, seus fragmentos são menos cortantes.</p>
+                        <!--<p>Com a película de segurança aplicada corretamente, você terá a segurança dos fragmentos presos nesta película. O que torna seu box de vidro temperado muito mais seguro. O safety
                             box é especialmente indicado para ambientes utilizados por idosos e crianças. Disponíveis nas cores: Incolor, verde, fumê e bronze.
-                        </p>
+                        </p>-->
                     </div>
                 </div>
                 <div class="col-md-6 py-5">
@@ -444,7 +288,7 @@
         </div>
     </section>
 
-    <section class="dividros-section bg-light">
+    <!--<section class="dividros-section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
                 <div class="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
@@ -467,7 +311,7 @@
                             <div class="d-md-flex">
                                 <div class="one-forth align-self-center" data-aos="zoom-in" data-aos-once="true">
                                     <div class="hovereffect">
-                                        <img class="img-fluid" src="img/porta-esquadria-aluminio.jpg" alt="Porta Esquadria Aluminio">
+                                        <img class="img-fluid" src="src/img/porta-esquadria-aluminio.jpg" alt="Porta Esquadria Aluminio">
                                         <div class="overlay">
                                             <h2>Porta com Esquadria</h2>
                                             <a class="info" href="" data-toggle="modal" data-target="#myModal" style=" margin: 90px 0 0;">Amplie
@@ -479,8 +323,8 @@
                                     <h2 class="mb-4">Limpeza</h2>
                                     <p>O box para banheiro não exige produtos caros, nem mão de obra especializada para a limpeza, pode ser feita com água e sabão. Para finalizar, um pano seco é suficiente.
                                     </p>
-                                    <!--<p><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" class="btn btn-primary py-3">Entre em contato
-                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>-->
+                                    <!--<p><a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' class="btn btn-primary py-3">Entre em contato
+                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -488,7 +332,7 @@
                             <div class="d-md-flex">
                                 <div class="one-forth order-last align-self-center">
                                     <div class="hovereffect">
-                                        <img id="myImg" src="img/esquadria.png" class="img-fluid" alt="Esquadria-aluminio" title="Esquadria aluminio">
+                                        <img id="myImg" src="src/img/esquadria.png" class="img-fluid" alt="Esquadria-aluminio" title="Esquadria aluminio">
                                         <div class="overlay">
                                             <h2>Esquadria de alumínio</h2>
                                             <a class="info" href="" data-toggle="modal" data-target="#myModal2">Amplie
@@ -499,8 +343,8 @@
                                 <div class="one-half order-first mr-md-5 align-self-center">
                                     <h2 class="mb-4">Variedade</h2>
                                     <p>A grande variedade de modelos, de acabamentos e dimensões das esquadrias de alumínio, possibilita as mais diversas composições, criando ambientes bem iluminados, agradáveis, bem ventilados e iluminados.</p>
-                                    <!--<p><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" class="btn btn-primary py-3">Entre em contato
-                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>-->
+                                    <!--<p><a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' class="btn btn-primary py-3">Entre em contato
+                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -508,7 +352,7 @@
                             <div class="d-md-flex">
                                 <div class="one-forth align-self-center">
                                     <div class="hovereffect">
-                                        <img id="myImg" src="img/esquadria.jpg" class="img-fluid" alt="Casa-Esquadria-aluminio" title="Casa com Esquadria Aluminio">
+                                        <img id="myImg" src="src/img/esquadria.jpg" class="img-fluid" alt="Casa-Esquadria-aluminio" title="Casa com Esquadria Aluminio">
                                         <div class="overlay">
                                             <h2>Casa com Esquadria Aluminio</h2>
                                             <a class="info" href="" data-toggle="modal" data-target="#myModal3" style=" margin: 90px 0 0;">Amplie
@@ -520,8 +364,8 @@
                                     <h2 class="mb-4">Durabilidade</h2>
                                     <p>Resistência é o ponto alto no quesito durabilidade para esquadrias de alumínio. E em construção, durabilidade é sinônimo também de economia. Outro fator importante a ser levado é conta: esquadrias de alumínio são uma
                                         excelente escolha para regiões litorâneas.</p>
-                                    <!--<p><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" class="btn btn-primary py-3">Entre em contato
-                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>-->
+                                    <!--<p><a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' class="btn btn-primary py-3">Entre em contato
+                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>-
                                 </div>
                             </div>
                         </div>
@@ -530,7 +374,7 @@
                             <div class="d-md-flex">
                                 <div class="one-forth order-last align-self-center">
                                     <div class="hovereffect">
-                                        <img id="myImg" src="img/casa_esquadria.jpg" class="img-fluid" alt="Mansao-Esquadria-aluminio" title="Mansao Esquadria Aluminio">
+                                        <img id="myImg" src="src/img/casa_esquadria.jpg" class="img-fluid" alt="Mansao-Esquadria-aluminio" title="Mansao Esquadria Aluminio">
                                         <div class="overlay">
                                             <h2>Fachada casa com Esquadria Alumínio</h2>
                                             <a class="info" href="" data-toggle="modal" data-target="#myModal4">Amplie
@@ -541,8 +385,8 @@
                                 <div class="one-half order-first mr-md-5 align-self-center">
                                     <h2 class="mb-4">Valorização</h2>
                                     <p>As esquadrias de alumínio valorizam os imóveis, tornando-os modernos, a um baixo custo de manutenção. Beleza, funcionalidade e um ótimo desempenho a um custo bem acessível, evidenciam a escolha das esquadrias de alumínio.</p>
-                                    <!--<p><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" class="btn btn-primary py-3">Entre em contato
-                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>-->
+                                    <!--<p><a href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' class="btn btn-primary py-3">Entre em contato
+                                            <i class="fa fa-whatsapp" style="font-size:26px"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -551,10 +395,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section>
-
     </section>
 
     <div class="modal" id="myModal">
@@ -566,7 +406,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-content" src="img/porta-esquadria-aluminio.jpg" alt="Porta-Esquadria-aluminio" title="Porta de Esquadria de aluminio">
+                    <img class="modal-content" src="src/img/porta-esquadria-aluminio.jpg" alt="Porta-Esquadria-aluminio" title="Porta de Esquadria de aluminio">
                 </div>
 
                 <div class="modal-footer">
@@ -586,7 +426,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-content" src="img/esquadria.png" alt="Esquadria-aluminio" title="Esquadria aluminio">
+                    <img class="modal-content" src="src/img/esquadria.png" alt="Esquadria-aluminio" title="Esquadria aluminio">
                 </div>
 
                 <div class="modal-footer">
@@ -606,7 +446,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-content" src="img/esquadria.jpg" alt="Casa-Esquadria-aluminio" title="Casa com Esquadria Aluminio">
+                    <img class="modal-content" src="src/img/esquadria.jpg" alt="Casa-Esquadria-aluminio" title="Casa com Esquadria Aluminio">
                 </div>
 
                 <div class="modal-footer">
@@ -626,7 +466,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <img class="modal-content" src="img/casa_esquadria.jpg" alt="Mansao-Esquadria-aluminio" title="Mansao Esquadria Aluminio">
+                    <img class="modal-content" src="src/img/casa_esquadria.jpg" alt="Mansao-Esquadria-aluminio" title="Mansao Esquadria Aluminio">
                 </div>
 
                 <div class="modal-footer">
@@ -648,29 +488,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
-                    <a href="http://www.cebrace.com.br" target="_blank" class="partner"><img src="img/cebrace.png" class="img-fluid" alt="Parceiro Cebrace"></a>
+                    <a href="http://www.cebrace.com.br" target="_blank" class="partner"><img src="src/img/cebrace.png" class="img-fluid" alt="Parceiro Cebrace"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
-                    <a href="https://decampaluminio.com.br" target="_blank" class="partner"><img src="img/decamp.jpg" class="img-fluid" alt="Parceiro Decamp"></a>
+                    <a href="https://decampaluminio.com.br" target="_blank" class="partner"><img src="src/img/decamp.jpg" class="img-fluid" alt="Parceiro Decamp"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="250">
-                    <a href="http://www.fermax.com.br" target="_blank" class="partner"><img src="img/fermax.png" class="img-fluid" alt="Parceiro Fermax"></a>
+                    <a href="http://www.fermax.com.br" target="_blank" class="partner"><img src="src/img/fermax.png" class="img-fluid" alt="Parceiro Fermax"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
-                    <a href="http://www.archicentro.com.br/" target="_blank" class="partner"><img src="img/archicentro.png" class="img-fluid" alt="Parceiro Archicentro"></a>
+                    <a href="http://www.archicentro.com.br/" target="_blank" class="partner"><img src="src/img/archicentro.png" class="img-fluid" alt="Parceiro Archicentro"></a>
                 </div>
                 <div class="col-sm" data-aos="fade-up" data-aos-once="true" data-aos-delay="450">
-                    <a href="http://projetoaluminio.com.br/" target="_blank" class="partner"><img src="img/projetoal.png" class="img-fluid" alt="Parceiro ProjetoAl"></a>
+                    <a href="http://projetoaluminio.com.br/" target="_blank" class="partner"><img src="src/img/projetoal.png" class="img-fluid" alt="Parceiro ProjetoAl"></a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-
-
-    <!--<button onclick="topFunction()" id="myBtn" title="Voltar ao top">&#8593</button>-->
-    <div id="topcontrol" title="Voltar ao topo" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
-    </div>
+    <!--<div id="topcontrol" title="Voltar ao topo" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+    </div>-->
 
     <footer class="dividros-footer dividros-bg-dark dividros-section">
         <div class="container">
@@ -703,10 +540,10 @@
                     <div class="dividros-footer-widget mb-4 ml-md-5">
                         <h2 class="dividros-heading-2">Links úteis</h2>
                         <ul class="list-unstyled">
+                            <li><a href="index.html" class="py-2 d-block">Home</a></li>
                             <li><a href="empresa.html" class="py-2 d-block">A Dividros</a></li>
                             <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
-                            <li><a href="portfolio.html" class="py-2 d-block">Portfólio</a></li>
-                            <li><a href="redessociais.html" class="py-2 d-block">Redes Sociais</a></li>
+                            <!--<li><a href="portfolio.html" class="py-2 d-block">Portfólio</a></li>-->
                             <li><a href="contato.html" class="py-2 d-block">Contato</a></li>
                         </ul>
                     </div>
@@ -715,14 +552,14 @@
                     <div class="dividros-footer-widget mb-4">
                         <h2 class="dividros-heading-2">Produtos</h2>
                         <ul class="list-unstyled">
-                            <li><a href="/" style="color: #fff; text-decoration: underline;" class="py-2 d-block">Esquadrias</a></li>
-                            <li><a href="espelho.html" class="py-2 d-block">Espelho</a></li>
-                            <li><a href="acm.html" class="py-2 d-block">ACM</a></li>
+                            <li><a href="esquadria.html" class="py-2 d-block">Esquadrias</a></li>
+                            <li><a href="espelho.html" class="py-2 d-block">Espelhos</a></li>
+                            <!--<li><a href="acm.html" class="py-2 d-block">ACM</a></li>-->
                             <li><a href="janelaseportas.html" class="py-2 d-block">Janelas e portas</a></li>
-                            <li><a href="pvc.html" class="py-2 d-block">PVC</a></li>
-                            <li><a href="box.html" class="py-2 d-block">Box</a></li>
-                            <li><a href="vidromultilaminado.html" class="py-2 d-block">Vidro Multilaminado</a></li>
-                            <li><a href="vidrotemperado.html" class="py-2 d-block">Vidro Temperado</a></li>
+                            <!--<li><a href="pvc.html" class="py-2 d-block">PVC</a></li>-->
+                            <li><a href="/" style="color: #fff; text-decoration: underline;" class="py-2 d-block">Box</a></li>
+                            <!--<li><a href="vidromultilaminado.html" class="py-2 d-block">Vidro Multilaminado</a></li>-->
+                            <!--<li><a href="vidrotemperado.html" class="py-2 d-block">Vidro Temperado</a></li>-->
                         </ul>
                     </div>
                 </div>
@@ -734,7 +571,7 @@
                                 <li>
                                     <a href="https://www.google.com/maps/place/Dividros+-+Esquadria,+Fachada,+ACM,+Inox/@-20.1413926,-44.9043281,19.5z/data=!4m13!1m7!3m6!1s0xa0a57128adc27b:0xdd228e3fc4ba92dd!2sR.+Goi%C3%A1s,+220+-+Porto+Velho,+Divin%C3%B3polis+-+MG,+35500-001!3b1!8m2!3d-20.1487731!4d-44.8827374!3m4!1s0xa0a59255bcdf3f:0x1337d7e33b609bb5!8m2!3d-20.1412907!4d-44.9042532"
                                         target="_blank">
-                                        <span class="icon icon-map-marker"></span><span class="text">Rua Góias,
+                                        <span class="icon icon-map-marker"></span><span class="text">Rua Goiás,
                                             2020,
                                             Divinópolis, Minas Gerais</span></a>
                                 </li>
@@ -762,37 +599,34 @@
 
 
     <div>
-        <a class="whats-icon" href="https://api.whatsapp.com/send?1=pt_BR&phone=5537991581932" target="_blank" data-toggle="tooltip" data-placement="right" title="Clique aqui para comunicação via Whatsapp">
+        <a class="whats-icon" href="https://wa.me/5537999833967?text=Ola" target="_blank" rel='nofollow' data-toggle="tooltip" data-placement="right" title="Clique aqui para comunicação via Whatsapp">
             <i style="margin-top:16px;" class="fa fa-whatsapp"></i>
         </a>
     </div>
 
-    <!--<a class="whats-icon btn-floating btn-lg btn-tw waves-effect waves-light" type="button" role="button"><i class="fab fa-twitter"></i></a>-->
-
-    <!--<script src="js/loader.js"></script>-->
-
     <!-- Principal JavaScript do Bootstrap
-        ================================================= = -->
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/popper.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/back-to-top-contato.js" type="text/javascript"></script>
-    <script src="js/main-contato.js" type="text/javascript"></script>
-    <script src="js/carousel.js" type="text/javascript"></script>
+    =================================================-->
+
+    <script src="src/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="src/tether/dist/js/tether.min.js"></script>
+    <script src="src/popper.js/dist/popper.js" type="text/javascript"></script>
+    <script src="src/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="src/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="src/js/main.js" type="text/javascript"></script>
+    <script src="src/js/all.js" type="text/javascript"></script>
 
     <!-- Só faz o nossos placeholders de imagens funcionarem. Não precisar copiar a próxima linha! -->
-    <script src="js/holder.min.js"></script>
+    <script src="src/assets/js/vendor/holder.min.js" type="text/javascript"></script>
 
-    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/aos.js" type="text/javascript"></script>
-
-
-
+    <script src="src/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="src/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="src/js/aos.js" type="text/javascript"></script>
+    <script src="src/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="src/js/SmoothScroll.js" type="text/javascript"></script>
+    <script src="src/js/back-to-top-contato.js" type="text/javascript"></script>
 
     <script id="rendered-js">
         $(document).ready(function() {
@@ -817,10 +651,15 @@
         });
     </script>
 
-    <!-- Google Analytics -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CRFPG4" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Analytics - ****antigo
     <script>
         (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
+            i['GoogleAnalyticsObject '] = r;
             i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
@@ -829,12 +668,12 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        })(window, document, 'script ', 'https://www.google-analytics.com/analytics.js ', 'ga ');
 
-        ga('create', 'UA-6011328-12', 'auto');
-        ga('send', 'pageview');
+        ga('create ', 'GTM-5CRFPG4', 'auto ');
+        ga('send ', 'pageview ');
     </script>
-    <!-- End Google Analytics -->
+    <!-- End Google Analytics-->
 
 </body>
 
