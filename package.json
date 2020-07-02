@@ -1,0 +1,18 @@
+{
+  "name": "dividros",
+  "version": "1.0.0",
+  "description": "Site Dividros, vidros temperados, esquaradrias de aluminio e PVC",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "tether": "^1.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Equipe de TI - Divine Vidros de Segurança",
+  "license": "ISC"
+}
